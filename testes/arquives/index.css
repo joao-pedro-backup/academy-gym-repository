@@ -1,0 +1,762 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,900;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;600;800;900&display=swap');
+
+font-face {
+    font-family: 'Gotham';
+    font-weight: 900 !important;
+    src: url(fonts/Gotham-Font/Gotham-Thin.otf);
+    
+}
+
+@font-face {
+    font-family: 'Gotham-Medium';
+    src: url(fonts/Gotham-Font/GothamMedium.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Black';
+    src: url(fonts/Gotham-Font/Gotham-Black.otf);
+}
+
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url(fonts/Gotham-Font/Gotham-Bold.otf);
+}
+
+@font-face{
+    font-family: 'Edo';
+    src: url(fonts/edosz.ttf);
+}
+
+:root{
+    --first-section-color:#0a0a0a;
+    --sections-main-color:#212529;
+    --main-primary-color:#fff;
+    --main-secondary-color:#ff8000;
+    --background-buttons-color:#d52b1e;
+    --p-font-size:1.6rem;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-padding-top: 9rem;
+    -webkit-text-size-adjust: 100%;
+}
+
+body{
+    overflow-x: hidden;
+    min-height: 600rem;
+    min-height: 300rem;
+    background-color: var(--first-section-color);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Gotham-Black','Times New Roman', Times, serif;
+    font-size: 3.8rem;
+    color: var(--main-primary-color);
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3.5rem 6rem;
+    z-index: 1000;
+    overflow-x: hidden;
+}
+
+header .header-logo img{
+    position: relative;
+    bottom: 1.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+header .header-title{
+    position: relative;
+    left: 1.5rem;
+}
+
+header .header-title span{
+    color: var(--main-secondary-color);
+}
+
+header .header-contact{
+    position: relative;
+    right: 3rem;
+    color: var(--main-primary-color);
+    font-family: 'Bebas Neue',sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+header .header-contact .contact-number a{
+    position: relative;
+    top: 1.2rem;
+    color: #fff;
+    margin-top: 0.8rem;
+    text-decoration: none;
+}
+
+header .header-contact .contact-number a .icon{
+    padding-left: 1rem;
+    font-size: 2rem;
+}
+
+header .header-social-medias{
+    position: relative;
+    top: 1rem;
+    right: 2rem;
+    display: flex;
+    font-size: 2.8rem;
+    column-gap: 1rem;
+}
+
+header .header-social-medias .icon{
+    color: var(--main-primary-color);
+    padding-right: 1rem;
+}
+
+header .header-social-medias .icon:hover{
+    transform: scale(1.4);
+    color: var(--main-secondary-color);
+    transition: all 200ms ease-in-out;
+}
+
+.home{
+    position: relative;
+    min-height: 70rem;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #fff;
+    background: linear-gradient(rgba(17, 17, 17, 0.306),rgba(0, 0, 0, 0.379)),url(medias/imgs/hero-1.webp);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+.home .hero-phrase-section{
+    position: absolute;
+    top: 16rem;
+    right: 15rem;
+    height: auto;
+    width: 40rem;
+}
+
+.home .hero-phrase-section h2{
+    font-size: 8rem;
+    line-height: 8rem;
+    font-family: 'Edo';
+    margin-bottom: 1rem;
+}
+
+.home .hero-phrase-section h2 span{
+    color: var(--main-secondary-color);
+}
+
+.home .hero-phrase-section p{
+    color: var(--main-primary-color);
+    font-size: 2.5rem;
+    font-family: 'Gotham',sans-serif;
+}
+
+.home .hero-phrase-section .cta-button{
+    position: relative;
+    top: 4rem;
+    left: 0rem;
+    transition: 0.2s;
+}
+
+.home .hero-phrase-section .cta-button:hover{
+    transform: scale(1.2);
+}
+
+.home .hero-phrase-section .cta-button a{
+    text-decoration: none !important;
+}
+
+.home .hero-phrase-section .cta-button a h3{
+    text-align: center;
+    border-radius: 1rem;
+    background-color: var(--background-buttons-color);
+    font-family: 'Gotham-Medium',sans-serif;
+    padding: 0.5rem;
+}
+
+.experience-section{
+    position: relative;
+    top: 0rem;
+    height: fit-content;
+    width: 100%;
+    overflow-x: hidden;
+    margin-bottom: 3rem;
+}
+
+.experience-section .experience-title{
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.experience-section .experience-title span{
+    color: var(--main-secondary-color);
+}
+
+.experience-section .experience-cards{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 3rem;
+    margin-bottom: 2rem;
+    overflow-x: hidden;
+    padding: 6rem 3rem;
+}
+
+.experience-section .experience-cards .card{
+    position: relative;
+    min-height: 25rem;
+    width: 45rem;
+    box-shadow: rgb(27, 26, 26) 0px 3px 17px 0px;
+    border-radius: 10px;
+    overflow-x: hidden;
+    outline: 1px solid var(--background-buttons-color);
+    background-color: var(--sections-main-color);
+}
+
+.experience-section .experience-cards .card img{
+    height: 21rem;
+    width: 100%;
+    object-fit: cover;  
+    object-position: 0% 85%;
+}
+
+.experience-section .experience-cards .card figcaption{
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: 'Gotham',sans-serif;
+    color: var(--main-primary-color);
+    margin: 0.5rem 0;
+}
+
+.registration-section{
+    position: relative;
+    top: 6rem;
+    display: flex;
+    flex-direction: column  ;
+    justify-content: center;
+    align-items: center;
+    height: 55rem;
+    width: 100%;
+    background-image: url(medias/imgs/banner-bg.webp);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-transform: capitalize;
+    color: var(--main-primary-color);
+    overflow-x: hidden;
+    margin: 3rem 0;
+    padding: 3rem 0;
+}
+
+.registration-section .registration-title{
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.registration-section .registration-title h2{
+    font-family: 'Edo';
+    font-size: 5rem;
+    letter-spacing: 1px;
+}
+
+.registration-section .registration-title h2 span{
+    color: var(--main-secondary-color);
+}
+
+.registration-section .registration-paragraph p{
+    font-family: 'Gotham-Black',sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 5rem;
+}
+
+.registration-section .cta-button{
+    position: relative;
+    transition: 0.2s;
+}
+
+.registration-section .cta-button:hover{
+    transform: scale(1.2);
+}
+
+.registration-section .cta-button a{
+    text-decoration: none;
+}
+
+.registration-section .cta-button a h3{
+    text-align: center;
+    border-radius: 1rem;
+    background-color: var(--background-buttons-color);
+    font-family: 'Gotham-Medium',sans-serif;
+    padding: 0.5rem 6rem;
+}
+
+.price-plans{
+    position: relative;
+    top: 0rem;
+    height: fit-content;
+    width: 100%;  
+    margin-bottom: 3rem;  
+    overflow: hidden;
+}
+
+.price-plans .price-title{
+    height: fit-content;
+    width: 100%;
+    margin: 8rem 0;
+    text-align: center;
+}
+
+.price-plans .price-title h2 span{
+    color: var(--main-secondary-color);
+}
+
+.price-plans .plan-cards{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 3rem;
+}
+
+.price-plans .plan-cards .plan-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 29rem;
+    min-height: 50rem;
+    padding-bottom: 1.5rem;
+    border-radius: 2.5rem;
+    background-color: var(--main-primary-color);
+    box-shadow: rgb(0, 0, 0) 10px 10px 10px 16px;
+}
+
+.price-plans .plan-cards .plan-card:hover{
+    outline: 2px solid var(--main-secondary-color);
+}
+
+.price-plans .plan-cards .plan-card .card-header{
+    position: relative;
+    bottom: 0.1rem;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    border-radius: 2.5rem 2.5rem 0 0;
+    padding: 1rem 0;
+    background-color: var(--sections-main-color);
+}
+
+.price-plans .plan-cards .plan-card .card-header h3{
+    font-size: 2.5rem;
+    font-family: 'Gotham',sans-serif;
+    font-weight: 100;
+}
+
+.price-plans .plan-cards .plan-card .card-header h3 span{
+    font-family: 'Gotham-Bold',sans-serif;
+    font-weight: 900;
+}
+
+.price-plans .plan-cards .plan-card .plan-price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 25px 10px;
+    font-family: "Gotham",sans-serif;
+}
+
+.price-plans .plan-cards .plan-card .plan-price p{
+    font-family: 'Gotham-Black',sans-serif;
+    font-size: 3rem;
+}
+
+.price-plans .plan-cards .plan-card .plan-highlighted{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 5.8rem;
+    padding: 0.6rem 1.5rem;
+    color: var(--first-section-color);
+    font-family: "Gotham-Bold",sans-serif;
+    font-size: 1.7rem;
+    text-align: center;
+    background-color: var(--main-secondary-color);
+}
+
+.price-plans .plan-cards .plan-card .plan-features{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 1.8rem 2.5rem 0.3rem 2.5rem;
+    list-style: none;
+}
+
+.price-plans .plan-cards .plan-card .plan-features li:first-child{
+    min-height: 4.2rem;   
+}
+
+.price-plans .plan-cards .plan-card .plan-features li{
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 1.6rem;
+}
+
+
+.price-plans .plan-cards .plan-card .plan-features li::before{
+    content: "";
+    display: block;
+    width: 7px;
+    min-width: 7px;
+    height: 7px;
+    margin-right: 8px;
+    margin-top: 7px;
+    border-radius: 50%;
+    background-color: #ffad12;
+}
+
+.price-plans .plan-cards .plan-card .plan-features li p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotham',sans-serif;
+    font-size: 1.6rem;
+    color: #000000;
+}
+
+.price-plans .plan-cards .plan-card:last-child .card-header{
+    background-color: var(--main-secondary-color);
+}
+
+.price-plans .plan-cards .plan-card:last-child .card-header h3{
+    color: var(--first-section-color);
+}
+
+.price-plans .plan-cards .plan-card:last-child .card-header h3 span{
+    font-family: 'Gotham-Bold'sans-serif;
+    font-weight: 900;
+    color: var(--first-section-color);
+}
+
+.price-plans .plan-cards .plan-card:last-child .plan-highlighted{
+    background-color: var(--sections-main-color);
+    color: var(--main-primary-color);
+}
+
+
+.price-plans .cta-button{
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 8rem 0;
+    
+}
+
+.price-plans .cta-button a{
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.price-plans .cta-button a:hover{
+    transform: scale(1.2);
+}
+
+.price-plans .cta-button a h2{
+    text-align: center;
+    border-radius: 1rem;
+    padding: 0.5rem 6rem;
+    background-color: var(--background-buttons-color);
+}
+
+.gallery-section{
+    position: relative;
+    top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    height: fit-content;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.gallery-section img{
+    height: 47.2rem;
+    width: 30.8rem;
+    object-fit: cover;
+}
+
+.gallery-section img:first-child{
+    width: 62.6rem;
+}
+
+.gallery-section img:last-child{
+    width: 62.6rem;
+}
+
+.team-section{
+    position: relative;
+    top: 0rem;
+    height: 70rem;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.team-section .team-section-title{
+    position: relative;
+    margin: 8rem 0;
+    text-align: center;
+}
+
+.team-section .team-section-title h2 span{
+    color: var(--main-secondary-color);
+}
+
+.team-section .team-cards{
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.team-section .team-cards .card{
+    position: relative;
+    height: 45rem;
+    width: 36rem;
+    overflow: hidden;
+}
+
+.team-section .team-cards .card:hover .card-description{
+    height: 20rem;
+}
+
+.team-section .team-cards .card .card-description{
+    position: absolute;
+    bottom: -4rem;
+    height: 0rem;
+    width: 100%;
+    background-color: var(--sections-main-color);
+    border-top: 4px solid var(--first-section-color);
+    z-index: 100;
+    transform: skewY(-6deg);
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+}
+
+.team-section .team-cards .card .card-description .personal-trainer-name{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    transform: skewY(5deg);
+    text-decoration: none;
+}
+
+.team-section .team-cards .card .card-description .personal-trainer-name p{
+    font-size: 2.4rem;
+    font-family: 'Gotham-Black',sans-serif;
+    letter-spacing: 1px;
+    color: var(--main-primary-color);
+    margin-bottom: 2rem;
+}
+
+.team-section .team-cards .card .card-description .personal-trainer-name i{
+    font-size: 1.5rem;
+    font-family: 'Gotham-Bold',sans-serif;
+    color: var(--main-primary-color);
+}
+
+.section-map{
+    position: relative;
+    height: 70rem;
+    width: 100%;
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+
+.section-map .title h2{
+    position: relative;
+    text-align: center;
+    padding: 8rem 0;
+}
+
+.section-map .title h2 span{
+    color: var(--main-secondary-color);
+}
+
+.section-map .map{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+
+footer{
+    position: relative;
+    padding: 4rem 3rem;
+    border-top: 5px solid var(--main-secondary-color);
+    overflow-x: hidden;
+    margin: 3rem 0;
+}
+
+footer .footer-social-medias{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-social-medias a{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Roboto',sans-serif;
+    color: var(--main-primary-color);
+    padding-right: 5rem;
+}
+
+footer .footer-social-medias a:hover{
+    color: var(--main-secondary-color);
+}
+
+footer .footer-social-medias a p{
+    padding-left: 1rem;
+}
+
+footer .copyright-section{
+    border-top: 2px solid var(--sections-main-color);
+    text-align: center;
+    margin: 4rem 0;
+}
+
+footer .copyright-section p{
+    font-size: 2rem;
+    font-family: 'Bebas Neue',sans-serif;
+    color: var(--main-primary-color);
+}
+
+@media (max-width:900px){
+    html{
+        font-size: 55%;
+    }
+    .home .hero-phrase-section{
+        position: absolute;
+        right: 3rem;
+    }
+    .experience-section .experience-cards .card{
+        position: relative;
+        min-height: 50rem;
+        min-width: 90%;
+    }
+    .experience-section .experience-cards .card img{
+        height: 45rem;
+    }
+    .experience-section .experience-cards .card figcaption{
+        font-size: 3rem;
+    }
+    .registration-section .registration-title h2{
+        font-size: 4rem;
+    }
+    .gallery-section img{
+        width: 40rem;
+    }
+    .gallery-section img:first-child{
+        width: 100%;
+    }
+    .gallery-section img:last-child{
+        width: 100%;
+    }
+    .team-section .team-cards .card img{
+        width: 30rem;
+    } 
+    .team-section .team-cards .card .card-description{
+    position: absolute;
+    bottom: -2rem;
+    height: 20rem;
+}
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 30%;
+    }
+    header .header-logo img{
+        height: 7.5rem;
+        width: 7.5rem;
+    }
+    .experience-section{
+        padding: 2rem 0;
+    }
+    .experience-section .experience-cards{
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+    .experience-section .experience-cards .card{
+        scroll-snap-align: start;
+    }
+
+    .registration-section .registration-title h2{
+        font-size: 3.5rem;
+    }
+   .registration-section .registration-paragraph p{
+        font-size: 2rem;
+   }
+   .gallery-section{
+    position: relative;
+    top: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    height: fit-content;
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+.gallery-section img{
+    height: 50rem;
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: start;
+}
+}
